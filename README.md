@@ -1,6 +1,6 @@
 # Introduction
 
-This repository contains Vet App website and software
+This is a Flask boiletplate that can be used to create full stack application. Please read content and review requirements.txt folder and adjust packages as needed. 
 
 # Content
 
