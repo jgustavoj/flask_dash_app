@@ -1,0 +1,40 @@
+{% set _TITLE = 'Dashboard' %} {% extends 'main/_base.html' %} {% block head %}
+<style>
+  html {
+    font-size: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  *,
+  *::before,
+  *::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: black;
+    line-height: 1.3;
+    overflow-x: hidden;
+  }
+</style>
+{% endblock %} {% block content %}
+<div id="main">
+  <div class="user">
+    <p>Dashboard</p>
+    {% for user in admin %}
+    <h2>Hello, {{user.first_name | capitalize}}!</h2>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %} {% block javascript %}
+<script>
+  console.log("Dashboard JS");
+</script>
+{% endblock %}
